@@ -1,0 +1,90 @@
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to right, #c91d2e71, #060b55); /* Fondo  */
+}
+
+body {
+    background-image: url('../img/3442937.jpg'); /*.. para la ruta relativa*/
+    background-size: cover; /* La imagen de fondo cubrirá todo el tamaño del contenedor */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Fondo  diseñado por Freepik: https://www.freepik.es/vector-gratis/fondo-conexion-degradado_45337615.htm#fromView=search&page=1&position=2&uuid=29906f93-a352-479e-8ca4-25c2c089ae9a
+Atribución requerida diseñada por <a href="https://www.freepik.com" title="Freepik">Freepik</a> */
+
+
+.titulo {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+
+.imagenPerfil {
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.seccion {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.seccion h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.seccion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.seccion ul li {
+    margin-bottom: 10px;
+}
+
+.seccion ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.seccion ul li a:hover {
+    text-decoration: underline;
+}
+   /* Estilo para las barras de progreso */
+progress {
+    width: calc(100% - 40px); /* Ancho de la barra de progreso */
+    height: 20px;
+    margin-right: 20px; /* Espacio entre la barra de progreso y la imagen */
+}
+/*Estilo para el botón*/
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #c91d2e71, #060b55); /* Fondo  */
+
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}

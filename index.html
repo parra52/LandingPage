@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Personal</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+   
+</head>
+
+<body>
+    <div class="contenedor"> <!-- Inicio del contenedor -->
+        <header> <!-- Encabezado -->
+
+            <div class="textos"> 
+                <h1>Sergio Parra Martín</h1> <!-- Título -->
+                <h2>Técnico en Sistemas Microinfomáticos y Redes</h2> <!-- Subtítulo -->
+                <br>
+                <h2>Desarrollador de Aplicaciones Multiplataformas</h2> <!-- Subtítulo -->
+                <a href="">Inicio</a> <!-- Enlace de Inicio -->
+                <div class="submenu"> <!-- Submenú -->
+                    <a href="#quiensoy">QUIEN SOY</a> <!-- Enlace -->
+                    <div class="submenucontenido"> <!-- Contenido del submenú -->
+                        <a href="#quiensoy">SOBRE MÍ</a> <!-- Enlace del submenú -->
+                        <a href="indexCV.html" target="_blank">CURRICULUM VITAE</a> <!-- Enlace del submenú -->
+                    </div>
+                </div>
+                <a href="#proyectos">PROYECTOS</a> <!-- Enlace -->
+                <a href="#contacto">CONTACTO</a> <!-- Enlace -->
+            </div>
+        </header>
+
+        <section id="quiensoy"> <!-- Sección Quién soy -->
+            <header>
+                <h2>Sobre mí</h2> 
+            </header>
+            <article>
+                <p>¡Hola! Soy Sergio Parra Martín <br> actualmente estudiante de la UNIR , cursando El Ciclo Superior en Desarrollo de Aplicaciones Multiplataforma, también conocido como DAM <br>Actualmente tengo el título de Técnico en Sistemas Microinformáticos y Redes ,cursado en el Instituto IES Valle del Jerte,Plasencia,Cáceres.</p>
+                <p>He tenido experiencia de cara al publico en el sector de la hosteleria , para mi es un reto este nuevo sector de la informática que afronto con ganas.</p>
+            </article>
+        </section>
+
+        <section id="proyectos"> 
+            <header>
+                <h2>Proyectos Destacados</h2> <!--Encabezado -->
+            </header>
+            <article class="proyecto">
+                <a href="https://parra52.github.io/SergioParraMartinBreakingBad/" target="_blank">BreakingBad----------Formulario----------Tabla Periódica</a><br><br> <!-- Enlace del proyecto -->
+                <img src="img/BB.png" alt="Proyecto 1"><br> <!-- Imagenes del proyecto -->
+                <a href="https://parra52.github.io/ExamenLenguaje/" target="_blank">Juego de Arkanoid</a><br><br> <!-- Enlace del proyecto -->
+                <img src="img/JAR.PNG" alt="Proyecto 2"><br> 
+                <a href="https://github.com/usuario/proyecto2" target="_blank">Proyecto 2</a><br><br> <!-- Enlace del proyecto -->
+                <img src="img/BB.png" alt="Proyecto 1"> 
+            </article>
+        </section>
+
+        <section id="contacto"> <!--Contacto-->
+            <header>
+                <h2>Contacto</h2> 
+            </header>
+            <article>
+                <p>¿Quieres ponerte en contacto conmigo? Completa el formulario a continuación y te responderé lo antes posible.</p> <br><br>
+
+                <!-- Formulario de contacto -->
+                <form action="#" method="post"> 
+                    <div class="formSecciones">
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre" required placeholder="nombre"><br> 
+                    </div>
+                    <div class="formSecciones">
+                        <label for="apellidos">Apellidos:</label><br> 
+                        <input type="text" id="apellidos" name="apellidos" required placeholder="apellidos"><br> 
+                    </div>
+                    <div class="formSecciones">
+                        <label for="email">E-mail:</label><br> 
+                        <input type="email" id="email" name="email" required placeholder="Dirección de correo"><br> 
+                    </div>
+                    <div class="formSecciones">
+                        <label for="telefono">Teléfono:</label><br>
+                        <input type="tlf" id="telefono" name="telefono" required placeholder="telefono de contacto"><br> 
+                    </div>
+                    <div class="formSecciones">
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" required placeholder="cualquier tipo de duda o comentario "></textarea><br><br> 
+                    </div>
+                    <input type="submit" value="Enviar"><br><br> 
+                    <input type="reset" value="Borrar"> 
+                </form>
+            </article>
+        </section>
+
+        <footer> <!-- Pie de página redes sociales -->
+            <div class="redSocial">
+                <a href="https://github.com/parra52" target="_blank"><img src="img/github.png" alt="GitHub"></a> 
+                <a href="https://linkedin.com/in/tuusuario" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a> 
+                <a href="mailto:pmsergio52@gmail.com" target="_blank"><img src="img/gmail.png" alt="Contacto"></a> 
+            </div>
+            <p>&copy; 2024 Mi Página Personal</p> 
+        </footer>
+    </div> 
+</body>
+
+</html>

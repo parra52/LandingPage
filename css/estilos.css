@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase; /* Transforma todo el texto a mayúsculas */
+}
+
+.contenedor {
+    display: block; /* Display de bloque para el contenedor */
+}
+
+p {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #fff; /* Color del texto */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Tipo de fuente */
+    background: linear-gradient(to right, #060b55, #d6172a); /* Fondo con degradado */
+    color: #333; /* Color de texto */
+}
+
+header {
+    height: auto; /* Altura automática */
+    padding: 40px; /* Relleno interno */
+    width: 100%; /* Ancho completo */
+    position: relative; /* Posición relativa */
+}
+
+img {
+    display: block; /* Elemento de bloque */
+    height: 70px; /* Altura de la imagen */
+    object-fit: cover; /* La imagen se ajusta al contenedor */
+    animation: arriba 1s ease-in; /* Animación de entrada */
+}
+
+.textos {
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación centrada */
+}
+
+.textos h1 {
+    font-size: 80px; /* Tamaño de fuente del título */
+    animation: moverDerecha 1s ease-in; /* Animación de entrada */
+}
+
+.textos h2 {
+    font-size: 30px; /* Tamaño de fuente del subtítulo */
+    animation: moverIzquierda 1s ease-in; /* Animación de entrada */
+}
+
+.textos a {
+    display: inline-block; /* Elemento en línea con bloque */
+    color: #fff; /* Color del texto */
+    font-weight: 300; /* Grosor de la fuente */
+    text-decoration: none; /* Sin decoración de texto */
+    margin-top: 30px; /* Margen superior */
+    border: 1px solid #fff; /* Borde sólido */
+    width: 150px; /* Ancho de 150px */
+    border-radius: 3px; /* Borde redondeado */
+    text-align: center; /* Alineación centrada */
+    padding: 10px 0; /* Relleno interno */
+    animation: arriba 1s ease-in; /* Animación de entrada para los enlaces */
+}
+
+.submenu {
+    position: relative; /* Posición relativa */
+    display: inline-block; /* Elemento en línea con bloque */
+}
+
+.submenucontenido {
+    display: none; /* No mostrar contenido */
+    position: absolute; /* Posición absoluta */
+    min-width: 160px; /* Ancho mínimo */
+    background-color: transparent; /* Fondo transparente */
+    border-radius: 5px; /* Borde redondeado */
+    overflow: hidden; /* Ocultar el contenido que se desborde */
+    z-index: 1; /* Z-index para que esté por encima del contenido */
+}
+
+.submenucontenido a {
+    color: black; /* Color del texto */
+    padding: 12px 16px; /* Relleno interno */
+    text-decoration: none; /* Sin decoración de texto*/
+    display: block; /* Elemento de bloque */
+    background-color: rgba(249, 249, 249, 0.8); /*Fondo semitransparente */
+}
+
+.submenucontenido a:hover {
+    background-color: rgba(241, 241, 241, 0); /* Fondo semitransparente al pasar el ratón */
+}
+
+.submenu:hover .submenucontenido {
+    display: block; /* Mostrar el contenido al pasar el ratón */
+}
+
+section {
+    text-align: center; /* Alineación centrada */
+    padding: 100px; /* Relleno interno */
+    margin-top: 10px; /* Margen superior */
+}
+
+article {
+    margin-bottom: 20px; /* Margen inferior entre artículos */
+}
+
+.proyecto {
+    border: 2px solid #fff; /* Borde sólido */
+    border-radius: 100px; /* Borde redondeado */
+    padding: 20px; /* Relleno interno */
+    margin-bottom: 20px; /* Margen inferior */
+    max-width: 1500px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+.proyecto img {
+    max-width: 100%; /* Ancho máximo */
+    display: block; /* Elemento de bloque */
+    margin: auto; /* Centrado horizontal */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+footer {
+    padding: 20px; /* Relleno interno */
+    text-align: center; /* Alineación centrada */
+    background: linear-gradient(to right, #060b55, #d6172a); /* Fondo con degradado */
+    color: white; /* Color de texto */
+    position: relative; /* Posición relativa */
+}
+
+.redSocial {
+    display: flex; /* Display flexible */
+    justify-content: center; /* Alineación centrada */
+    align-items: center; /* Alineación centrada */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+form {
+    max-width: 500px; /* Ancho máximo */
+    margin: 0 auto; /* Centrado horizontal */
+    border: 2px solid #f9f9f9; /* Borde sólido */
+    padding: 20px; /* Relleno interno */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.formSecciones {
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tlf"],
+textarea {
+    width: calc(100% - 22px); /* Ancho menos el relleno */
+    padding: 10px; /* Relleno interno */
+    border: 1px solid #ddd; /* Borde sólido */
+    border-radius: 5px; /* Borde redondeado */
+    font-size: 18px; /* Tamaño de fuente */
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 100%; /* Ancho completo */
+    background-color: #d6172a; /* Color de fondo */
+    color: white; /* Color de texto */
+    border: none; /* Sin borde */
+    padding: 10px; /* Relleno interno */
+    cursor: pointer; /* Cursor apuntador */
+    border-radius: 5px; /* Borde redondeado */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: background-color 1s ease; /* Transición de color de fondo */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #ff0000; /* Color de fondo al pasar el ratón */
+}
+
+section article a {
+    color: white; /* Color de texto */
+    text-decoration: none; /* Sin decoración de texto */
+}
+
+label {
+    color: white; /* Color del texto */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    font-size: 15px; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de la fuente */
+    margin-bottom: 5%; /* Margen inferior */
+    display: block; /* Elemento de bloque */
+}
+
+
+   /* 
+"@keyframes" es una regla que nos permite crear animaciones
+Esta animación hace que un elemento se desplace hacia arriba desde fuera de la vista mientras se vuelve gradualmente visible 
+ 
+*/
+@keyframes arriba {
+    0% {
+        opacity: 0; /* Opacidad */
+        transform: translateY(100px); /* Mover el texto hacia arriba */
+    }
+
+    100% {
+        opacity: 1; /* Opacidad */
+        transform: translateX(0); /* Transformación */
+    }
+}
+
+@keyframes moverIzquierda {
+    0% {
+        opacity: 0; /* Opacidad */
+        transform: translateX(-100px); /* Mover el texto hacia la izquierda */
+    }
+
+    100% {
+        opacity: 1; /* Opacidad */
+        transform: translate(0); /* Transformación */
+    }
+}
+
+@keyframes moverDerecha {
+    0% {
+        opacity: 0; /* Opacidad */
+        transform: translateX(100px); /* Mover el texto hacia la derecha */
+    }
+
+    100% {
+        opacity: 1; /* Opacidad */
+        transform: translate(0); /* Transformación */
+    }
+}
+
+@media screen and (max-width: 576px) {
+header .textos h1 {
+font-size: 24px;
+}
+
+header .textos h2 {
+font-size: 16px;
+}
+
+header nav a {
+margin: 0 5px;
+}
+
+section form {
+max-width: 90%;
+}
+}
+
+@media screen and (max-width: 992px) {
+header .textos h1 {
+font-size: 28px;
+}
+
+header .textos h2 {
+font-size: 18px;
+}
+
+section form {
+max-width: 90%;
+}
+}
