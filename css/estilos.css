@@ -239,33 +239,8 @@ Esta animación hace que un elemento se desplace hacia arriba desde fuera de la 
 }
 
 @media screen and (max-width: 576px) {
-header .textos h1 {
-font-size: 24px;
-}
 
-header .textos h2 {
-font-size: 16px;
-}
-
-header nav a {
-margin: 0 5px;
-}
-
-section form {
-max-width: 90%;
-}
 }
 
 @media screen and (max-width: 992px) {
-header .textos h1 {
-font-size: 28px;
-}
-
-header .textos h2 {
-font-size: 18px;
-}
-
-section form {
-max-width: 90%;
-}
 }
